@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aman Arora - BCA Student Portfolio | Computer Application Student at IAMR GZB" />
+  <title>Aman Arora | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">AA</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" id="nl-home">Home</a></li>
+      <li><a href="#about" class="nav-link" id="nl-about">About</a></li>
+      <li><a href="#education" class="nav-link" id="nl-edu">Education</a></li>
+      <li><a href="#skills" class="nav-link" id="nl-skills">Skills</a></li>
+      <li><a href="#hobbies" class="nav-link" id="nl-hobbies">Hobbies</a></li>
+      <li><a href="#contact" class="nav-link" id="nl-contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-avatar-wrap">
+        <div class="hero-avatar">
+          <div class="avatar-fallback" id="avatarFallback">AA</div>
+          <div class="avatar-ring ring-1"></div>
+          <div class="avatar-ring ring-2"></div>
+        </div>
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          Open to Opportunities
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">
+          <span class="name-part">Aman</span>
+          <span class="name-part highlight">Arora</span>
+        </h1>
+        <div class="typewriter-wrap">
+          <span id="typewriter"></span><span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-bio">
+          A passionate <strong>Computer Application Student</strong> at IAMR GZB, driven by curiosity and a love for technology. Responsible, orderly, and eager to gain my first professional work experience.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary" id="hero-contact-btn">Get In Touch</a>
+          <a href="#about" class="btn btn-outline" id="hero-about-btn">Know More</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who Am I?</h2>
+        <p class="section-subtitle">A brief introduction to who I am and what drives me</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass reveal">
+          <div class="about-icon">🎓</div>
+          <h3>Student</h3>
+          <p>Currently pursuing BCA at IAMR GZB (2023–2026), building a strong foundation in computer science and software development.</p>
+        </div>
+        <div class="about-card glass reveal delay-1">
+          <div class="about-icon">💡</div>
+          <h3>Self-Motivated</h3>
+          <p>I consider myself a responsible and orderly individual, always looking for challenges that help me grow personally and professionally.</p>
+        </div>
+        <div class="about-card glass reveal delay-2">
+          <div class="about-icon">🚀</div>
+          <h3>Aspiring Developer</h3>
+          <p>With skills in Python, Java, C, HTML, and CSS, I am actively looking to gain real-world work experience and contribute to meaningful projects.</p>
+        </div>
+      </div>
+      <div class="language-section reveal">
+        <h3>Languages I Speak</h3>
+        <div class="language-pills">
+          <div class="language-pill">
+            <span class="lang-flag">🇬🇧</span>
+            <div class="lang-info">
+              <span class="lang-name">English</span>
+              <span class="lang-level">Native</span>
+            </div>
+          </div>
+          <div class="language-pill">
+            <span class="lang-flag">🇮🇳</span>
+            <div class="lang-info">
+              <span class="lang-name">Hindi</span>
+              <span class="lang-level">Native</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Education</span>
+        <h2 class="section-title">Academic Journey</h2>
+        <p class="section-subtitle">My educational background and qualifications</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-connector">
+            <div class="timeline-dot active"></div>
+          </div>
+          <div class="timeline-card glass">
+            <div class="timeline-meta">
+              <span class="timeline-year">2023 – 2026</span>
+              <span class="timeline-badge current">Current</span>
+            </div>
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <h4>Institute of Applied Medicine &amp; Research (IAMR), GZB</h4>
+            <p>Pursuing BCA with a focus on programming, software development, and computer science fundamentals. Building practical skills through coursework and projects.</p>
+            <div class="timeline-tags">
+              <span>Computer Science</span>
+              <span>Programming</span>
+              <span>Web Development</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-connector">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card glass">
+            <div class="timeline-meta">
+              <span class="timeline-year">Completed</span>
+              <span class="timeline-badge done">Completed</span>
+            </div>
+            <h3>Intermediate &amp; High School</h3>
+            <h4>G.B.S.S. School (CBSE Board)</h4>
+            <p>Completed both intermediate and high school education under the CBSE curriculum, establishing a strong academic and analytical foundation.</p>
+            <div class="timeline-tags">
+              <span>CBSE Board</span>
+              <span>High School</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Computer Skills</span>
+        <h2 class="section-title">My Tech Stack</h2>
+        <p class="section-subtitle">Technologies and tools I'm comfortable working with</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card glass reveal">
+          <div class="skill-icon-wrap python">🐍</div>
+          <h3>Python</h3>
+          <p>Understanding of Python basics including data types, control flow, loops, functions, and simple scripting.</p>
+          <div class="skill-progress">
+            <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
+            <span class="skill-label">Beginner · 55%</span>
+          </div>
+        </div>
+        <div class="skill-card glass reveal delay-1">
+          <div class="skill-icon-wrap java">☕</div>
+          <h3>Java &amp; C</h3>
+          <p>Foundational knowledge of Java and C including object-oriented concepts, data structures, and basic algorithms.</p>
+          <div class="skill-progress">
+            <div class="skill-bar"><div class="skill-fill" data-width="45"></div></div>
+            <span class="skill-label">Beginner · 45%</span>
+          </div>
+        </div>
+        <div class="skill-card glass reveal delay-2">
+          <div class="skill-icon-wrap html">🌐</div>
+          <h3>HTML &amp; CSS</h3>
+          <p>Capable of building structured and styled web pages using modern HTML5 semantics and CSS3 techniques.</p>
+          <div class="skill-progress">
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            <span class="skill-label">Intermediate · 70%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies -->
+  <section class="section section-alt" id="hobbies">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Hobbies</span>
+        <h2 class="section-title">Beyond the Screen</h2>
+        <p class="section-subtitle">Things I enjoy doing when I'm not coding</p>
+      </div>
+      <div class="hobbies-grid">
+        <div class="hobby-card glass reveal">
+          <div class="hobby-emoji">✈️</div>
+          <h3>Travelling</h3>
+          <p>Exploring new places, cultures, and experiences keeps me inspired and broadens my perspective on life and the world around us.</p>
+        </div>
+        <div class="hobby-card glass reveal delay-1">
+          <div class="hobby-emoji">🌱</div>
+          <h3>Gardening</h3>
+          <p>Finding peace in nurturing plants and watching things grow — a calming and fulfilling counterbalance to my passion for tech.</p>
+        </div>
+        <div class="hobby-card glass reveal delay-2">
+          <div class="hobby-emoji">📚</div>
+          <h3>Learning New Skills</h3>
+          <p>Constantly exploring new technologies, tools, and disciplines to stay relevant and grow as a well-rounded individual.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Have an opportunity or just want to say hi? Reach out!</p>
+      </div>
+      <div class="contact-wrap">
+        <div class="contact-info glass reveal">
+          <h3>Get in Touch</h3>
+          <p class="contact-intro">Whether you have an opportunity, a question, or just want to say hello — my inbox is always open!</p>
+          <div class="contact-items">
+            <a href="tel:7065569838" class="contact-item" id="phone-link">
+              <div class="contact-item-icon">📞</div>
+              <div class="contact-item-text">
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">+91 7065569838</span>
+              </div>
+            </a>
+            <a href="mailto:aman.25.9250593475@gmail.com" class="contact-item" id="email-link">
+              <div class="contact-item-icon">📧</div>
+              <div class="contact-item-text">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">aman.25.9250593475@gmail.com</span>
+              </div>
+            </a>
+            <div class="contact-item" id="address-info">
+              <div class="contact-item-icon">📍</div>
+              <div class="contact-item-text">
+                <span class="contact-label">Address</span>
+                <span class="contact-value">A-3 Indraport, Loni, Ghaziabad</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form glass reveal delay-1" id="contactForm">
+          <h3>Send a Message</h3>
+          <div class="form-group">
+            <label for="senderName">Your Name</label>
+            <input type="text" id="senderName" name="name" placeholder="John Doe" required autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <label for="senderEmail">Your Email</label>
+            <input type="email" id="senderEmail" name="email" placeholder="john@example.com" required autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <label for="senderMessage">Message</label>
+            <textarea id="senderMessage" name="message" rows="4" placeholder="Hello Aman, I'd like to connect…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span id="submitText">Send Message</span>
+            <span class="btn-arrow">→</span>
+          </button>
+          <div class="form-success" id="formSuccess">✅ Thank you! I'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">Aman Arora</div>
+      <p class="footer-tagline">BCA Student · Aspiring Developer · Tech Enthusiast</p>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">© 2026 Aman Arora. Crafted with ❤️ using HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
